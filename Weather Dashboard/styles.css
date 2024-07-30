@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+header h1, header input, header button {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+#current-weather, #forecast {
+    margin: 1rem 0;
+}
+
+#forecast-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-item {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.forecast-item img {
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  background-color:brown;
+ 
+}
+
+header .logo img {
+    height: 80px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: gold;
+    text-decoration: none;
+  margin-right: 10px;
+  font-size: 18px;
+  position: relative;
+  color:gold;
+}
+nav ul li a::after{
+  content:'';
+  width: 0;
+  height: 3px;
+  background: gold;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition:0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.hero {
+    background: url('https://scontent.fmba5-1.fna.fbcdn.net/v/t39.30808-6/332875586_1549007195583016_4941902575094584072_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=p2fReVRx1wIQ7kNvgGQxsc9&_nc_ht=scontent.fmba5-1.fna&oh=00_AYDqKvfdXo5U_MW1z_cNXx4_JAYB-O5COcJRkf4CL_YQIA&oe=66A69712') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 30px;
+}
+
+.btn {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  
+}
+.services{
+  color:gold;
+}
+section {
+    padding: 40px 20px;
+}
+
+.services-container {
+    display: flex;
+    gap: 20px;
+}
+
+.service {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+}
+.us{
+  color:gold;
+}
+.gallery{
+  color:gold;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+.contact{
+  color:gold;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: brown;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

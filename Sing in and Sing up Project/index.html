@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In/Sign Up Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container sign-up-container">
+      <form id="signUpForm">
+        <h1>Sign Up</h1>
+        <input type="text" placeholder="User" id="signUpName" required />
+        <input type="email" placeholder="Email" id="signUpEmail" required />
+        <input type="password" placeholder="Password" id="signUpPassword" required />
+        <button type="submit">Sign Up</button>
+        <div class="question">
+          <span>Already have an account?</span>
+          <a href="#" id="goToSignIn">Sign In Here</a>
+        </div>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form id="signInForm">
+        <h1>Sign In</h1>
+        <input type="email" placeholder="Email" id="signInEmail" required />
+        <input type="password" placeholder="Password" id="signInPassword" required />
+        <button type="submit">Sign In</button>
+        <div class="question">
+          <span>Don't have an account?</span>
+          <a href="#" id="goToSignUp">Sign Up Here</a>
+        </div>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <button class="ghost" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
